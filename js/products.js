@@ -24,7 +24,7 @@ function mostrarProductos(data) {
 
         <div class="divTexto">
             <div class="divNombre">
-                <p class="nombre">${item.name}</p>
+                <p class="nombre mb-0">${item.name}</p>
             </div>
 
             <div class="divDescripcion">
@@ -58,7 +58,6 @@ listaProductos.innerHTML = listaHtml;
   }
 
   const productosDivs = document.querySelectorAll('.producto');
-
   productosDivs.forEach((productoDiv) => {
     productoDiv.addEventListener('click', () => {
       // Acá almaceno en una constante el id del producto
